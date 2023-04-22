@@ -28,46 +28,88 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
             ""id"": ""d580d9f3-a4bd-42b0-87a4-6630ad6ca19c"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
+                    ""name"": ""XAxis"",
+                    ""type"": ""Value"",
                     ""id"": ""3a1fdc4c-ae98-4f0f-91ee-b10cd28cb01f"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ZAxis"",
+                    ""type"": ""Value"",
+                    ""id"": ""4f702953-9eab-4fb4-a43c-6949db7bdc12"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": ""Horizontal"",
-                    ""id"": ""25012027-0378-42a5-866b-54547fcabe7c"",
+                    ""name"": ""1D Axis"",
+                    ""id"": ""68719a34-d35c-46e2-a405-d9c12be965b4"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""XAxis"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""8d47cf83-5edd-410b-8640-df4a8d8b30ef"",
+                    ""id"": ""739cd2ac-9ff3-42b1-ac3d-9d7e4438d446"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""XAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""a44c8987-59ce-4398-8a23-18e5e93a57fa"",
+                    ""id"": ""261884a0-7bc2-4073-a5bd-8c87199854e6"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""XAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""90150b76-39e2-4bd0-82e7-f87ea9f50e01"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZAxis"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""f9cb3f31-d5c9-478f-a714-b65fa4d9a080"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""6f362484-2d93-487b-ae92-fd92b030558d"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -78,7 +120,8 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
 }");
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
-        m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
+        m_Movement_XAxis = m_Movement.FindAction("XAxis", throwIfNotFound: true);
+        m_Movement_ZAxis = m_Movement.FindAction("ZAxis", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -138,12 +181,14 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
     // Movement
     private readonly InputActionMap m_Movement;
     private IMovementActions m_MovementActionsCallbackInterface;
-    private readonly InputAction m_Movement_Move;
+    private readonly InputAction m_Movement_XAxis;
+    private readonly InputAction m_Movement_ZAxis;
     public struct MovementActions
     {
         private @PlayerController m_Wrapper;
         public MovementActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Movement_Move;
+        public InputAction @XAxis => m_Wrapper.m_Movement_XAxis;
+        public InputAction @ZAxis => m_Wrapper.m_Movement_ZAxis;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -153,22 +198,29 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_MovementActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMove;
+                @XAxis.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnXAxis;
+                @XAxis.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnXAxis;
+                @XAxis.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnXAxis;
+                @ZAxis.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnZAxis;
+                @ZAxis.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnZAxis;
+                @ZAxis.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnZAxis;
             }
             m_Wrapper.m_MovementActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
+                @XAxis.started += instance.OnXAxis;
+                @XAxis.performed += instance.OnXAxis;
+                @XAxis.canceled += instance.OnXAxis;
+                @ZAxis.started += instance.OnZAxis;
+                @ZAxis.performed += instance.OnZAxis;
+                @ZAxis.canceled += instance.OnZAxis;
             }
         }
     }
     public MovementActions @Movement => new MovementActions(this);
     public interface IMovementActions
     {
-        void OnMove(InputAction.CallbackContext context);
+        void OnXAxis(InputAction.CallbackContext context);
+        void OnZAxis(InputAction.CallbackContext context);
     }
 }

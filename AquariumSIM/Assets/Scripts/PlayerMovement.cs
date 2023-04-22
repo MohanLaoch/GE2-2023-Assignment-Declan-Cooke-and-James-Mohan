@@ -6,6 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     private PlayerController playerControls;
 
+    public float speed;
+
+    private void Awake()
+    {
+        playerControls = new PlayerController();
+    }
+
     private void OnEnable()
     {
         playerControls.Enable();
@@ -14,5 +21,16 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         playerControls.Disable();
+    }
+
+    private void Update()
+    {
+        float x = playerControls.Movement.XAxis.ReadValue<float>();
+
+        float z = playerControls.Movement.ZAxis.ReadValue<float>();
+
+        transform.Translate(speed * x * Time.deltaTime, 0, 0);
+
+        transform.Translate(0, 0, speed * z * Time.deltaTime);
     }
 }
