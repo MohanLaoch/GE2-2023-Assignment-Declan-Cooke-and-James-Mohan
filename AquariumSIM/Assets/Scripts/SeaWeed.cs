@@ -23,7 +23,7 @@ public class SeaWeed : MonoBehaviour
                 float pX = (verts[i].x * scale) + (Time.time * waveSpeed);
                 float pY = (verts[i].y * scale) + (Time.time * waveSpeed);
                 
-                verts[i].z = Mathf.PerlinNoise(pX, pY) * waveFrequency;
+                verts[i].x = Mathf.PerlinNoise(pX, pY) * waveFrequency;
 
             }
 
