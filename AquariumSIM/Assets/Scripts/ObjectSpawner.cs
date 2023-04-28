@@ -19,10 +19,12 @@ public class ObjectSpawner : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             int randomIndex = Random.Range(0, objects.Length);
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(-spawnRangeX / 2, spawnRangeX / 2), Random.Range(-spawnRangeY / 2, spawnRangeY / 2), Random.Range(-spawnRangeZ / 2, spawnRangeZ / 2));
+            Vector3 randomSpawnPosition = new Vector3
+                (Random.Range(transform.position.x-spawnRangeX / 2, transform.position.x+spawnRangeX / 2), 
+                Random.Range(transform.position.y-spawnRangeY / 2, transform.position.y+spawnRangeY / 2), 
+                Random.Range(transform.position.z-spawnRangeZ / 2, transform.position.z+spawnRangeZ / 2));
             GameObject newObj = Instantiate(objects[randomIndex], randomSpawnPosition, Quaternion.Euler(0f, 0f, 0f));
         }
-
     }
 
 

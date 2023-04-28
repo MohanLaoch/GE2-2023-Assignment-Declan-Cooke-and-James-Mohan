@@ -3552,7 +3552,7 @@ MonoBehaviour:
   spawnRangeY: 2
   spawnRangeZ: 10
   objects:
-  - {fileID: 8708033464612173490, guid: 71f86f909ee48de4d9ca8b136ff2692e, type: 3}
+  - {fileID: 2374932982952570705, guid: cbf72e9e08322c64ea96c1a029f7a316, type: 3}
   amount: 50
 --- !u!4 &1936574243
 Transform:
@@ -3562,7 +3562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936574241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.45, y: 1.62, z: 0}
+  m_LocalPosition: {x: 15.8, y: 1.18, z: -0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
