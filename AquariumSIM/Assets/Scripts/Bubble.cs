@@ -9,11 +9,17 @@ public class Bubble : MonoBehaviour
 
     private float speed;
     private float destroyTimer;
+    private float size;
 
     private void Awake()
     {
+
         speed = Random.Range(rangeMin, rangeMax);
         destroyTimer = Random.Range(rangeMin, rangeMax);
+        size = Random.Range(rangeMin / 2, rangeMax / 2);
+
+        transform.localScale = new Vector3(size, size, size);
+
         StartCoroutine(Destroy());
     }
 
