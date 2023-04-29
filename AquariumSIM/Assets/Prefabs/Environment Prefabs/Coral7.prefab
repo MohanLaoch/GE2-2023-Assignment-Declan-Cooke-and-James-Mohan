@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 367698045934641326}
   - component: {fileID: 367698045934641328}
   - component: {fileID: 367698045934641327}
+  - component: {fileID: 807556423403518593}
   m_Layer: 0
   m_Name: Dodecahedron
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &807556423403518593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367698045934641325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2194042186925421486, guid: 80ed2eeaeedb9074693de6b304a7dbb9, type: 3}
 --- !u!1 &367698045997476755
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 367698045997476756}
   - component: {fileID: 367698045997476758}
   - component: {fileID: 367698045997476757}
+  - component: {fileID: 8453256810749572387}
   m_Layer: 0
   m_Name: Dodecahedron (1)
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8453256810749572387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367698045997476755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2194042186925421486, guid: 80ed2eeaeedb9074693de6b304a7dbb9, type: 3}
 --- !u!1 &367698046181958772
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +355,7 @@ GameObject:
   - component: {fileID: 367698046791331595}
   - component: {fileID: 367698046791331597}
   - component: {fileID: 367698046791331596}
+  - component: {fileID: 1501221339073905139}
   m_Layer: 0
   m_Name: Dodecahedron (2)
   m_TagString: Untagged
@@ -397,6 +428,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1501221339073905139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367698046791331594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2194042186925421486, guid: 80ed2eeaeedb9074693de6b304a7dbb9, type: 3}
 --- !u!1 &367698047020119688
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +453,7 @@ GameObject:
   - component: {fileID: 367698047020119689}
   - component: {fileID: 367698047020119691}
   - component: {fileID: 367698047020119690}
+  - component: {fileID: 5880442640413882449}
   m_Layer: 0
   m_Name: Dodecahedron (3)
   m_TagString: Untagged
@@ -480,6 +526,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5880442640413882449
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367698047020119688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2194042186925421486, guid: 80ed2eeaeedb9074693de6b304a7dbb9, type: 3}
 --- !u!1 &565822524701677072
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,5 +571,5 @@ Transform:
   - {fileID: 367698046541700802}
   - {fileID: 367698046181958777}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

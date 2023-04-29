@@ -48,5 +48,5 @@ MonoBehaviour:
   spawnRangeY: 2
   spawnRangeZ: 5
   bubble: {fileID: 2374932982952570705, guid: cbf72e9e08322c64ea96c1a029f7a316, type: 3}
-  amount: 5
+  amount: 3
   spawnRate: 1

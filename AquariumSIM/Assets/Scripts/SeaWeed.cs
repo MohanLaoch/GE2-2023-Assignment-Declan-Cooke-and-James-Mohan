@@ -9,6 +9,11 @@ public class SeaWeed : MonoBehaviour
     public float waveFrequency;
 
 
+    private void Start()
+    {
+        waveSpeed = Random.Range(0.5f, 1.5f);
+    }
+
     void Update()
     {
 
