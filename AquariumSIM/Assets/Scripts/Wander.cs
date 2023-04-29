@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BehaviourSystem : StateMachine
+public class Wander : State
 {
-    private void Start()
-    {
-        
-    }
+
+    
 }
