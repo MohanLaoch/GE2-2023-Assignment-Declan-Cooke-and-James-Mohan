@@ -90,8 +90,11 @@ class PatrolState : State
     {
         public override void Enter()
         {
-            owner.GetComponent<Flee>().targetGameObject = owner.GetComponent<FightingFish>().enemy;
-            owner.GetComponent<Flee>().enabled = true;
+            foreach (GameObject targetObject in owner.GetComponent<Flee>().targetGameObject)
+            {
+                //owner.GetComponent<Flee>().targetGameObject = owner.GetComponent<FightingFish>().enemy;
+                owner.GetComponent<Flee>().enabled = true;
+            }
         }
 
         public override void Think()

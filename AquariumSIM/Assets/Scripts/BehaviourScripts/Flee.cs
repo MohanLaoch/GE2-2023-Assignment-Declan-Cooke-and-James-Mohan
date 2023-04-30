@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Flee : SteeringBehaviour
 {
-    public GameObject targetGameObject = null;
+    public GameObject[] targetGameObject = null;
     public Vector3 target = Vector3.zero;
 
     public void OnDrawGizmos()
     {
         if (isActiveAndEnabled && Application.isPlaying)
         {
-            Gizmos.color = Color.cyan;
-            if (targetGameObject != null)
+            foreach (GameObject targetObject in targetGameObject)
             {
-                target = targetGameObject.transform.position;
+                Gizmos.color = Color.cyan;
+                if (targetGameObject != null)
+                {
+                    target = targetObject.transform.position;
+                }
+                Gizmos.DrawLine(transform.position, target);
             }
-            Gizmos.DrawLine(transform.position, target);
         }
     }
 
@@ -27,9 +30,12 @@ public class Flee : SteeringBehaviour
 
     public void Update()
     {
-        if (targetGameObject != null)
+        foreach (GameObject targetObject in targetGameObject)
         {
-            target = targetGameObject.transform.position;
+            if (targetGameObject != null)
+            {
+                target = targetObject.transform.position;
+            }
         }
     }
 }
