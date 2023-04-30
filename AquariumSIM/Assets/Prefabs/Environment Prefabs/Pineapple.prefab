@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7932144272574656470}
   - component: {fileID: 7932144272574656469}
   - component: {fileID: 7932144272574656468}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7932144272702703557}
   - component: {fileID: 7932144272702703556}
   - component: {fileID: 7932144272702703555}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ Transform:
   - {fileID: 7932144274104147620}
   - {fileID: 7932144273160552894}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7932144272702703559
 MonoBehaviour:
@@ -2766,7 +2766,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5565
+  m_VersionIndex: 5571
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2878,7 +2878,7 @@ GameObject:
   - component: {fileID: 7932144273160552865}
   - component: {fileID: 7932144273160552864}
   - component: {fileID: 7932144273160552895}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2975,7 +2975,7 @@ GameObject:
   - component: {fileID: 7932144274104147623}
   - component: {fileID: 7932144274104147622}
   - component: {fileID: 7932144274104147621}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3083,7 +3083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216982673915607937, guid: eef491ec7741fc64b8ed4143acb7c6c4, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8956143873046346436, guid: eef491ec7741fc64b8ed4143acb7c6c4, type: 3}
       propertyPath: m_RootOrder
@@ -3201,6 +3201,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9208527048328417944, guid: 78fcacae84d6d134d9ac607ed32a1624, type: 3}
+      propertyPath: m_VersionIndex
+      value: 4248
+      objectReference: {fileID: 0}
     - target: {fileID: 9208527048328417946, guid: 78fcacae84d6d134d9ac607ed32a1624, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3208,6 +3212,10 @@ PrefabInstance:
     - target: {fileID: 9208527048328417949, guid: 78fcacae84d6d134d9ac607ed32a1624, type: 3}
       propertyPath: m_Name
       value: Pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208527048328417949, guid: 78fcacae84d6d134d9ac607ed32a1624, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
