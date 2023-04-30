@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pursue : MonoBehaviour
 {
-    public Boid1 target;
+    public Boid target;
     // Start is called before the first frame update
     void Start()
     {
