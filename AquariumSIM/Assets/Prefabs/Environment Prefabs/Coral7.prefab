@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 367698045934641328}
   - component: {fileID: 367698045934641327}
   - component: {fileID: 807556423403518593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 367698045997476758}
   - component: {fileID: 367698045997476757}
   - component: {fileID: 8453256810749572387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 367698046181958775}
   - component: {fileID: 367698046181958774}
   - component: {fileID: 367698046181958773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 367698046541700802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rocks2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 367698046791331597}
   - component: {fileID: 367698046791331596}
   - component: {fileID: 1501221339073905139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 367698047020119691}
   - component: {fileID: 367698047020119690}
   - component: {fileID: 5880442640413882449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403364399540278995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Coral7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

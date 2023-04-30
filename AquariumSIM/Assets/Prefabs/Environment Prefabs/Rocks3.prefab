@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6649651354527680503}
   - component: {fileID: 6365183571809004689}
   - component: {fileID: 3882586958111213694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 3992057627044283238}
   - component: {fileID: 1189605658418083756}
   - component: {fileID: 6799736429105062544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 2743774106579976982}
   - component: {fileID: 1838320650409181662}
   - component: {fileID: 3439698138301586755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6931057670532551797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rocks3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 3693854177903264523}
   - component: {fileID: 2206591035858462255}
   - component: {fileID: 3910318612632144373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dodecahedron (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

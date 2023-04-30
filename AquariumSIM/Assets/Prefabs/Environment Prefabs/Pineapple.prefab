@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7932144272574656470}
   - component: {fileID: 7932144272574656469}
   - component: {fileID: 7932144272574656468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7932144272702703557}
   - component: {fileID: 7932144272702703556}
   - component: {fileID: 7932144272702703555}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +2878,7 @@ GameObject:
   - component: {fileID: 7932144273160552865}
   - component: {fileID: 7932144273160552864}
   - component: {fileID: 7932144273160552895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2975,7 +2975,7 @@ GameObject:
   - component: {fileID: 7932144274104147623}
   - component: {fileID: 7932144274104147622}
   - component: {fileID: 7932144274104147621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,6 +3080,10 @@ PrefabInstance:
     - target: {fileID: 8216982673915607937, guid: eef491ec7741fc64b8ed4143acb7c6c4, type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216982673915607937, guid: eef491ec7741fc64b8ed4143acb7c6c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8956143873046346436, guid: eef491ec7741fc64b8ed4143acb7c6c4, type: 3}
       propertyPath: m_RootOrder
