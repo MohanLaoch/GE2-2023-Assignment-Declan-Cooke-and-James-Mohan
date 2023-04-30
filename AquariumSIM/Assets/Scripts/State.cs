@@ -28,7 +28,7 @@ class PatrolState : State
     {
         public override void Enter()
         {
-            owner.GetComponent<Pursue>().target = owner.GetComponent<FightingFish>().enemy.GetComponent<Boid1>();
+            owner.GetComponent<Pursue>().target = owner.GetComponent<FightingFish>().enemy.GetComponent<Boid>();
             owner.GetComponent<Pursue>().enabled = true;
         }
 
@@ -59,7 +59,7 @@ class PatrolState : State
     {
         public override void Enter()
         {
-            owner.GetComponent<Pursue>().target = owner.GetComponent<FightingFish>().enemy.GetComponent<Boid1>();
+            owner.GetComponent<Pursue>().target = owner.GetComponent<FightingFish>().enemy.GetComponent<Boid>();
             owner.GetComponent<Pursue>().enabled = true;
         }
 
