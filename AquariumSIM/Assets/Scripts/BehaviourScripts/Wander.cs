@@ -61,6 +61,7 @@ public class Wander : SteeringBehaviour
         theta += frequency * Time.deltaTime * Mathf.PI * 2.0f;
 
         return boid.SeekForce(worldTarget);
+        
     }
 
 }
