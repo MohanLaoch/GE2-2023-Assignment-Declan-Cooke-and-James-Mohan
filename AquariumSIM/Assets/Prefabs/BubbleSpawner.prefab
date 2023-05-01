@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f6286575b5ec94b9d3040fe9f0e75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRangeX: 5
+  spawnRangeX: 7.5
   spawnRangeY: 2
-  spawnRangeZ: 5
+  spawnRangeZ: 7.5
   bubble: {fileID: 2374932982952570705, guid: cbf72e9e08322c64ea96c1a029f7a316, type: 3}
-  amount: 3
+  amount: 5
   spawnRate: 1
