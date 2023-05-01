@@ -14,9 +14,12 @@ GameObject:
   - component: {fileID: 8465649491239328331}
   - component: {fileID: 8465649491239328330}
   - component: {fileID: 8465649491239328329}
-  - component: {fileID: 8465649491239328327}
-  - component: {fileID: 8465649491239328323}
-  - component: {fileID: 1321956061}
+  - component: {fileID: 1321956062}
+  - component: {fileID: 3168089226419852231}
+  - component: {fileID: 7942876822978633278}
+  - component: {fileID: 1321956065}
+  - component: {fileID: 7411335364359525677}
+  - component: {fileID: 8641224589617890256}
   m_Layer: 0
   m_Name: SchoolingFish
   m_TagString: Untagged
@@ -38,7 +41,7 @@ Transform:
   m_Children:
   - {fileID: 571772499044845293}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8465649491239328325
 MeshFilter:
@@ -136,7 +139,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updatesPerSecond: 5
---- !u!114 &8465649491239328327
+--- !u!114 &1321956062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465649491239328335}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd4545659ef2004caa2dd05bd0f99b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject:
+  - {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+--- !u!114 &3168089226419852231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,19 +166,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 8465649491239328335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcac09e8223cd840b4f0b7a57079124, type: 3}
+  m_Script: {fileID: 11500000, guid: de13d2938d4b0f542ba16fe7a7205762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7942876822978633278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465649491239328335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4164b6a9acad0f542a9bd4d24534e49a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+--- !u!114 &1321956065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465649491239328335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706bb7c1eeeef2a4ead53fbf397b5f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
-  frequency: 0.3
-  radius: 10
-  theta: 0
-  amplitude: 160
-  distance: 5
-  axis: 0
---- !u!114 &8465649491239328323
+  path: {fileID: 0}
+  waypointDistance: 5
+  next: 0
+  looped: 1
+--- !u!114 &7411335364359525677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,13 +214,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 0
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
-  maxSpeed: 1
-  maxForce: 1
+  maxSpeed: 5
+  maxForce: 10
   mass: 1
-  seekEnabled: 0
+  seekEnabled: 1
   seekTargetTransform: {fileID: 0}
   seekTarget: {x: 0, y: 0, z: 0}
   arriveEnabled: 0
@@ -196,7 +240,7 @@ MonoBehaviour:
   offsetPursueEnabled: 0
   leader: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
---- !u!114 &1321956061
+--- !u!114 &8641224589617890256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,22 +249,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8465649491239328335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c8067345e0426a45aaf1c93d995ff01, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dcac09e8223cd840b4f0b7a57079124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
-  scale: 4
-  forwardFeelerDepth: 30
-  sideFeelerDepth: 15
-  frontFeelerUpdatesPerSecond: 10
-  sideFeelerUpdatesPerSecond: 5
-  feelerRadius: 2
-  forceType: 0
-  mask:
-    serializedVersion: 2
-    m_Bits: 640
+  frequency: 0.3
+  radius: 10
+  theta: 0
+  amplitude: 80
+  distance: 5
+  axis: 0
 --- !u!1001 &8861677041497353306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9012925921824926391, guid: a0533eb5c6163bb4f9f41e0ad9f0bd75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.061
+      value: -0.139
       objectReference: {fileID: 0}
     - target: {fileID: 9012925921824926391, guid: a0533eb5c6163bb4f9f41e0ad9f0bd75, type: 3}
       propertyPath: m_LocalRotation.w

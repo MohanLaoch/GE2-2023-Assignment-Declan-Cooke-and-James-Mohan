@@ -6,7 +6,7 @@ class PatrolState : State
 {
     public override void Enter()
     {
-        owner.GetComponent<FollowPath1>().enabled = true;
+        owner.GetComponent<FollowPath>().enabled = true;
     }
 
     public override void Think()
@@ -15,45 +15,20 @@ class PatrolState : State
             owner.GetComponent<FightingFish>().enemy.transform.position,
             owner.transform.position) < 10)
         {
-            owner.ChangeState(new DefendState());
+            owner.ChangeState(new FleeState());
         }
     }
-
     public override void Exit()
     {
-        owner.GetComponent<FollowPath1>().enabled = false;
+        owner.GetComponent<FollowPath>().enabled = false;
     }
 
-    public class DefendState : State
-    {
-        public override void Enter()
-        {
-            owner.GetComponent<Pursue>().target = owner.GetComponent<FightingFish>().enemy.GetComponent<Boid>();
-            owner.GetComponent<Pursue>().enabled = true;
-        }
+}
+    
 
-        public override void Think()
-        {
-            Vector3 toEnemy = owner.GetComponent<FightingFish>().enemy.transform.position - owner.transform.position;
-            if (Vector3.Angle(owner.transform.forward, toEnemy) < 45 && toEnemy.magnitude < 20)
-            {
-                GameObject bullet = GameObject.Instantiate(owner.GetComponent<FightingFish>().bullet, owner.transform.position + owner.transform.forward * 2, owner.transform.rotation);
-                owner.GetComponent<FightingFish>().ammo--;
-            }
-            if (Vector3.Distance(
-                owner.GetComponent<FightingFish>().enemy.transform.position,
-                owner.transform.position) > 30)
-            {
-                owner.ChangeState(new PatrolState());
-            }
-        }
+      
 
-        public override void Exit()
-        {
-            owner.GetComponent<Pursue>().enabled = false;
-        }
-
-    }
+    
 
     public class AttackState : State
     {
@@ -65,12 +40,7 @@ class PatrolState : State
 
         public override void Think()
         {
-            Vector3 toEnemy = owner.GetComponent<FightingFish>().enemy.transform.position - owner.transform.position;
-            if (Vector3.Angle(owner.transform.forward, toEnemy) < 45 && toEnemy.magnitude < 30)
-            {
-                GameObject bullet = GameObject.Instantiate(owner.GetComponent<FightingFish>().bullet, owner.transform.position + owner.transform.forward * 2, owner.transform.rotation);
-                owner.GetComponent<FightingFish>().ammo--;
-            }
+           
             if (Vector3.Distance(
                 owner.GetComponent<FightingFish>().enemy.transform.position,
                 owner.transform.position) < 10)
@@ -103,7 +73,7 @@ class PatrolState : State
                 owner.GetComponent<FightingFish>().enemy.transform.position,
                 owner.transform.position) > 30)
             {
-                owner.ChangeState(new AttackState());
+                owner.ChangeState(new PatrolState());
             }
         }
         public override void Exit()
@@ -116,4 +86,4 @@ class PatrolState : State
     
 
 
-}
+
