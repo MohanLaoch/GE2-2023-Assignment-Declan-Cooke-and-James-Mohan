@@ -10,6 +10,11 @@ public class Path : MonoBehaviour
 
     public bool isLooped = true;
 
+    [Header("Path Area")]
+    public float pathRangeX = 10;
+    public float pathRangeY = 10;
+    public float pathRangeZ = 10;
+
     public void OnDrawGizmos()
     {
         //PopulatePath();
@@ -24,6 +29,28 @@ public class Path : MonoBehaviour
         if (isLooped)
         {
             Gizmos.DrawLine(waypoints[waypoints.Count - 1], waypoints[0]);
+        }
+
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireCube(transform.position, new Vector3(pathRangeX, pathRangeY, pathRangeZ));
+    }
+
+    private void Start()
+    {
+
+        for (int i = 0; i < waypoints.Count; i++)
+        {
+            Vector3 point = waypoints[i];
+
+            Vector3 randomPoint = new Vector3
+                (Random.Range(transform.position.x - pathRangeX / 2, transform.position.x + pathRangeX / 2),
+                Random.Range(transform.position.y - pathRangeY / 2, transform.position.y + pathRangeY / 2),
+                Random.Range(transform.position.z - pathRangeZ / 2, transform.position.z + pathRangeZ / 2));
+
+            point = randomPoint;
+
+            waypoints[i] = point;
+            
         }
     }
 
