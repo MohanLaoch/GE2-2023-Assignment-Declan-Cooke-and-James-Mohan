@@ -7,7 +7,7 @@
 #### James Mohan | C20305011
 
 ### Video: 
-(To be added)
+(https://youtu.be/NhVqAsyVCXw)
 
 # Proposal
 We plan on making a simulation of marine life living in their natural habitat underwater. Marine life is incredibly diverse and complex, with countless species exhibiting a wide range of behaviours that allow them to survive and thrive in their environments. Throughout our project we will explore the use of emergent behaviour, boids, harmonic functions, perlin noise, and a wide range of autonomous behaviours to simulate many different creatures working together in harmony. The environment around the sea creatures will provide new challenges and opportunities that they must adapt to. The simulation will provide a dynamic representation of a marine ecosystem, where many different creatures interact with each other in a complex and harmonious way.
@@ -57,22 +57,15 @@ Explore the underwater environment and observe how the different creatures inter
 
 
 
-Class/asset	Source
-MyClass.cs	Self written
-MyClass1.cs	Modified from reference
-MyClass2.cs	From reference
+## What they did
+# Declan
+My focus of the project was on making the underwater visual effects of the scene, as well as creating some of the aquatic boids. 
 
-
-Each team member or individual needs to write a paragraph or two explaining what they contributed to the project
-
-What they did
-
-What they are most proud of
+What they are most proud of 
 
 What they learned
 
 References
-Item 1
-Item 2
-
-
+[Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
+[Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
+[State Machine Implementation]https://youtu.be/G1bd75R10m4
