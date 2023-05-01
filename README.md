@@ -59,13 +59,20 @@ Explore the underwater environment and observe how the different creatures inter
 
 ## What they did
 # Declan
-My focus of the project was on making the underwater visual effects of the scene, as well as creating some of the aquatic boids. 
+My focus of the project was on making the underwater visual effects of the scene, as well as creating some of the aquatic boids. The turtles in the scene with wandering behaviours, as well as the school of fish that utilizes offset pursue, and fleeing behaviours. I also implemented a state machine to manage the different states and behaviours. 
 
 What they are most proud of 
+# Declan
+For me it was finally understanding and getting the state machine to function as intended, as i had no prior experience with working with abstract classes and virtual functions, it took some time to get used to it. It was a challenge but seeing the creatures almost have a life of their own was worth it!
 
 What they learned
+# Declan
+I learned how simple behaviours and algorithms can translate into a more complex finished product as they start interacting with one another, with unintended and unexpected consequences. I also got more experience with working with state machines as a whole.
 
 References
 [Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
+
 [Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
+
 [State Machine Implementation]https://youtu.be/G1bd75R10m4
+
