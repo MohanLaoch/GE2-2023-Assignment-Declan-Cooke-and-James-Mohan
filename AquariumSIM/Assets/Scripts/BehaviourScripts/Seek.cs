@@ -6,23 +6,19 @@ using UnityEngine;
 
 public class Seek : SteeringBehaviour
 {
-    public List<GameObject> targetGameObject = new List<GameObject>();
-    //public GameObject[] targetGameObject = null;
+    public GameObject targetGameObject = null;
     public Vector3 target = Vector3.zero;
 
     public void OnDrawGizmos()
     {
         if (isActiveAndEnabled && Application.isPlaying)
         {
-            foreach (GameObject targetObject in targetGameObject)
+            Gizmos.color = Color.cyan;
+            if (targetGameObject != null)
             {
-                Gizmos.color = Color.cyan;
-                if (targetGameObject != null)
-                {
-                    target = targetObject.transform.position;
-                }
-                Gizmos.DrawLine(transform.position, target);
+                target = targetGameObject.transform.position;
             }
+            Gizmos.DrawLine(transform.position, target);
         }
     }
 
@@ -33,12 +29,10 @@ public class Seek : SteeringBehaviour
 
     public void Update()
     {
-        foreach (GameObject targetObject in targetGameObject)
+        if (targetGameObject != null)
         {
-            if (targetGameObject != null)
-            {
-                target = targetObject.transform.position;
-            }
+            target = targetGameObject.transform.position;
         }
     }
+
 }
