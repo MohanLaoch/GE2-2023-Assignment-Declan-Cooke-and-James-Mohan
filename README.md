@@ -21,3 +21,9 @@ While our aquatic creatures only have a simple set of behaviours, what emerges f
 
 ### Terence McKenna
 When designing the rules and behaviours of our aquatic creaetures we kept in mind a system that could keep them always evolving and adapting to new challenges and opportunities. Each time the scene is started a random followpath is created for the anglerfish boid and the turtles, this means that each new instance of the scene provided these followpath creatures with new obstacles to avoid. To make sure that this happens smoothly both the angerfish and the turtles have the avoidance behaviour with it set to avoid obstacles and the player. In addition to this, the shark boid will chase the fish boids. After a set time of not being able to catch these fish, the shark will change target, adapting their path to the new target they are following.
+
+### Mathematics
+By using the mathematical power of boids we were able to replicate the behaviour of aquatic creatures.
+
+### The Universe
+Our world is an underwater environment. Thus our artificial life replicates the behaviour of aquatic creatures. When creating their systems we wanted the aquatic creatures to feel natural in their environment. To do this each boid has different behaviours that mirror the real life aquatic creature. Sharks have pursue behaviours, whereas fish have flee behaviours and the turtles have pathfollows that are random with each instance.
