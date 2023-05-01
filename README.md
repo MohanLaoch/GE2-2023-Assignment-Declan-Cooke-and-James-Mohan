@@ -47,16 +47,16 @@ Explore the underwater environment and observe how the different creatures inter
 |Avoidance.cs| Modified from reference|
 |Boid.cs| From [reference](https://github.com/skooter500/GE2-2021-2022)|
 |Colourchange.cs| Self Written|
-|FishController.cs| Modified from reference|
-|Flee.cs| Modified from reference|
-|FollowPath.cs| Modified from reference|
-ObjectSpawner.cs| Self Written|
+|FishController.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
+|Flee.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
+|FollowPath.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
+|ObjectSpawner.cs| Self Written|
 |PlayerMovement.cs| Self Written|
 |Harmonic.cs| Modified from reference|
-|SchoolingFish.cs| Modified from reference|
+|SchoolingFish.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
 |SeaWeed.cs| Self Written|
-|StateMachine.cs |Modified from reference|
-|Wander.cs| Modified from reference|
+|StateMachine.cs |Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
+|Wander.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
 
 
 
@@ -79,7 +79,7 @@ Personally, I am most proud of two things. Learning behaviours and learning cont
 I learned how simple behaviours and algorithms can translate into a more complex finished product as they start interacting with one another, with unintended and unexpected consequences. I also got more experience with working with state machines as a whole.
 
 ### James:
-I learned how you can use behaviours and states to create immersive and belieable AI. In addition, when we added the ability for the AI to interact with eachother, I learned the power of what artificial life forms are capable of through different emergent behaviours
+I learned how you can use behaviours and states to create immersive and believable AI. In addition, when we added the ability for the AI to interact with eachother, I learned the power of what artificial life forms are capable of through different emergent behaviours.
 
 
 # References
