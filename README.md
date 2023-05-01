@@ -72,12 +72,15 @@ I started off my contribution to the project by adding a player controller using
 For me it was finally understanding and getting the state machine to function as intended, as i had no prior experience with working with abstract classes and virtual functions, it took some time to get used to it. It was a challenge but seeing the creatures almost have a life of their own was worth it!
 
 ### James:
+Personally, I am most proud of two things. Learning behaviours and learning controlled random generation. I had previously never worked with behaviours so being given the opportunity to learn and use them was incredibly satisfying when they worked in the scene. I have previously worked with controlled random generation before, however by this point I'm proud to say that I'm quite confident with how it works!
 
 # What I learned
 ### Declan:
 I learned how simple behaviours and algorithms can translate into a more complex finished product as they start interacting with one another, with unintended and unexpected consequences. I also got more experience with working with state machines as a whole.
 
 ### James:
+I learned how you can use behaviours and states to create immersive and belieable AI. In addition, when we added the ability for the AI to interact with eachother, I learned the power of what artificial life forms are capable of through different emergent behaviours
+
 
 # References
 - [Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
