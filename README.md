@@ -39,18 +39,21 @@ WASD keys to move around the aquarium, spacebar to move up and shift to move dow
 Explore the underwater environment and observe how the different creatures interact with one another.
 
 ### List of classes/assets
+
+| **Class/Asset** | **Source** |
+|----------------|-----------------------|
+|FishController.cs| Modified from reference|
+|Flee.cs| Modified from reference|
+|Wander.cs| Modified from reference|
+|SchoolingFish.cs| Modified from reference|
+|Boid.cs| From reference|
+|Avoidance.cs| Modified from reference|
+|FollowPath.cs| Modified from reference|
+|PlayerMovement.cs| Self Written|
+|SeaWeed.cs| Self Written|
+|Colourchange.cs| Self Written|
+|Harmonic.cs| Modified from reference|
 |StateMachine.cs |Modified from reference|
-FishController.cs Modified from reference
-Flee.cs Modified from reference
-Wander.cs Modified from reference
-SchoolingFish.cs Modified from reference
-Boid.cs From reference
-Avoidance.cs Modified from reference
-FollowPath.cs Modified from reference
-PlayerMovement.cs Self Written
-SeaWeed.cs Self Written
-Colourchange.cs Self Written
-Harmonic.cs Modified from reference
 
 
 
