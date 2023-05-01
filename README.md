@@ -44,7 +44,7 @@ Explore the underwater environment and observe how the different creatures inter
 | **Class/Asset** | **Source** |
 |----------------|-----------------------|
 |AudioManager.cs| From [reference](https://www.youtube.com/watch?v=6OT43pvUyfY&ab_channel=Brackeys)|
-|Avoidance.cs| Modified from reference|
+|Avoidance.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
 |Boid.cs| From [reference](https://github.com/skooter500/GE2-2021-2022)|
 |Colourchange.cs| Self Written|
 |FishController.cs| Modified from [reference](https://github.com/skooter500/GE2-2021-2022)|
