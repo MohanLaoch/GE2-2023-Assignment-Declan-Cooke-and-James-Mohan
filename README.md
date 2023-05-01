@@ -29,14 +29,31 @@ By using the mathematical power of boids we were able to replicate the behaviour
 Our world is an underwater environment. Thus our artificial life replicates the behaviour of aquatic creatures. When creating their systems we wanted the aquatic creatures to feel natural in their environment. To do this each boid has different behaviours that mirror the real life aquatic creature. Sharks have pursue behaviours, whereas fish have flee behaviours and the turtles have pathfollows that are random with each instance.
 
 
-###Screenshots
+### Screenshots
 
 
-###Instructions
+### Instructions
+WASD keys to move around the aquarium, spacebar to move up and shift to move down
+
+### How it works
+Explore the underwater environment and observe how the different creatures interact with one another.
+
+### List of classes/assets
+|StateMachine.cs |Modified from reference|
+FishController.cs Modified from reference
+Flee.cs Modified from reference
+Wander.cs Modified from reference
+SchoolingFish.cs Modified from reference
+Boid.cs From reference
+Avoidance.cs Modified from reference
+FollowPath.cs Modified from reference
+PlayerMovement.cs Self Written
+SeaWeed.cs Self Written
+Colourchange.cs Self Written
+Harmonic.cs Modified from reference
 
 
-###How it works
-###List of classes/assets
+
 Class/asset	Source
 MyClass.cs	Self written
 MyClass1.cs	Modified from reference
