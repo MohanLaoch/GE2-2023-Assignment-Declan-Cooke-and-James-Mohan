@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3596838305226605678
 MonoBehaviour:
@@ -48,12 +48,18 @@ MonoBehaviour:
   sounds:
   - name: BeyondTheSea
     clip: {fileID: 8300000, guid: eae2a6d0fbd38aa47b3a29fdf8ffc531, type: 3}
-    volume: 1
+    volume: 0
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Dive
     clip: {fileID: 8300000, guid: 5ec3da7a097461e4088c0101316bca18, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: La Mer
+    clip: {fileID: 8300000, guid: 6febb19ac31522445b4ad8326672314a, type: 3}
     volume: 1
     pitch: 1
     loop: 1
