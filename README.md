@@ -30,7 +30,6 @@ Our world is an underwater environment. Thus our artificial life replicates the 
 
 
 ### Screenshots
-![image1](https://cdn.discordapp.com/attachments/791490719700221952/1102687691084144681/OceanE1.JPG)
 ![image2](https://cdn.discordapp.com/attachments/791490719700221952/1102687691331616808/OceanE2.JPG)
 ![image3](https://cdn.discordapp.com/attachments/791490719700221952/1102687691558096987/OceanE3.JPG)
 
@@ -80,7 +79,7 @@ I learned how simple behaviours and algorithms can translate into a more complex
 
 ### James:
 
-References
+### References
 - [Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
 - [Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
 - [State Machine Implementation](https://youtu.be/G1bd75R10m4)
