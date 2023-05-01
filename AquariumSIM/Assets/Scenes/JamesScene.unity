@@ -379,7 +379,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1321956061, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: mask.m_Bits
-      value: 1536
+      value: 1664
       objectReference: {fileID: 0}
     - target: {fileID: 8465649491239328326, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: m_RootOrder
@@ -819,7 +819,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1321956061, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: mask.m_Bits
-      value: 1536
+      value: 1664
       objectReference: {fileID: 0}
     - target: {fileID: 8465649491239328326, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: m_RootOrder
@@ -1208,7 +1208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1321956061, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: mask.m_Bits
-      value: 1536
+      value: 1664
       objectReference: {fileID: 0}
     - target: {fileID: 8465649491239328326, guid: ecc3f4c74223d834ca752e4aa6bb95b5, type: 3}
       propertyPath: m_RootOrder
@@ -6480,7 +6480,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   mass: 2
   damping: 0.01
-  maxSpeed: 5
+  maxSpeed: 7
   maxForce: 10
 --- !u!65 &1193344686
 BoxCollider:
