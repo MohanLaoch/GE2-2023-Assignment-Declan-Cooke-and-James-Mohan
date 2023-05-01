@@ -7,7 +7,7 @@
 #### James Mohan | C20305011
 
 ### Video: 
-[![YouTube](https://youtu.be/NhVqAsyVCXw)
+[![YouTube](https://cdn.discordapp.com/attachments/791490719700221952/1102687691084144681/OceanE1.JPG)](https://youtu.be/NhVqAsyVCXw)
 
 # Proposal
 We plan on making a simulation of marine life living in their natural habitat underwater. Marine life is incredibly diverse and complex, with countless species exhibiting a wide range of behaviours that allow them to survive and thrive in their environments. Throughout our project we will explore the use of emergent behaviour, boids, harmonic functions, perlin noise, and a wide range of autonomous behaviours to simulate many different creatures working together in harmony. The environment around the sea creatures will provide new challenges and opportunities that they must adapt to. The simulation will provide a dynamic representation of a marine ecosystem, where many different creatures interact with each other in a complex and harmonious way.
@@ -30,10 +30,12 @@ Our world is an underwater environment. Thus our artificial life replicates the 
 
 
 ### Screenshots
-
+![image1](https://cdn.discordapp.com/attachments/791490719700221952/1102687691084144681/OceanE1.JPG)
+![image2](https://cdn.discordapp.com/attachments/791490719700221952/1102687691331616808/OceanE2.JPG)
+![image3](https://cdn.discordapp.com/attachments/791490719700221952/1102687691558096987/OceanE3.JPG)
 
 ### Instructions
-WASD keys to move around the aquarium, spacebar to move up and shift to move down
+WASD keys to move around the aquarium, spacebar to move up and shift to move down.
 
 ### How it works
 Explore the underwater environment and observe how the different creatures interact with one another.
@@ -42,37 +44,44 @@ Explore the underwater environment and observe how the different creatures inter
 
 | **Class/Asset** | **Source** |
 |----------------|-----------------------|
+|AudioManager.cs| From [reference](https://www.youtube.com/watch?v=6OT43pvUyfY&ab_channel=Brackeys)|
+|Avoidance.cs| Modified from reference|
+|Boid.cs| From [reference](https://github.com/skooter500/GE2-2021-2022)|
+|Colourchange.cs| Self Written|
 |FishController.cs| Modified from reference|
 |Flee.cs| Modified from reference|
-|Wander.cs| Modified from reference|
-|SchoolingFish.cs| Modified from reference|
-|Boid.cs| From reference|
-|Avoidance.cs| Modified from reference|
 |FollowPath.cs| Modified from reference|
+ObjectSpawner.cs| Self Written|
 |PlayerMovement.cs| Self Written|
-|SeaWeed.cs| Self Written|
-|Colourchange.cs| Self Written|
 |Harmonic.cs| Modified from reference|
+|SchoolingFish.cs| Modified from reference|
+|SeaWeed.cs| Self Written|
 |StateMachine.cs |Modified from reference|
+|Wander.cs| Modified from reference|
 
 
 
 # What I did
-### Declan
+### Declan:
 My focus of the project was on making the underwater visual effects of the scene, as well as creating some of the aquatic boids. The turtles in the scene with wandering behaviours, as well as the school of fish that utilizes offset pursue, and fleeing behaviours. I also implemented a state machine to manage the different states and behaviours. 
 
+### James:
+I started off my contribution to the project by adding a player controller using Unity's new input system. Then worked on the environment by adding coral, rocks, a ship and many other little details to make the scene feel alive. To give a natural feeling to the scene I made script that would randomly spawn these objects. I then turned my attention to creating 
+
 # What I am most proud of 
-### Declan
+### Declan:
 For me it was finally understanding and getting the state machine to function as intended, as i had no prior experience with working with abstract classes and virtual functions, it took some time to get used to it. It was a challenge but seeing the creatures almost have a life of their own was worth it!
 
+### James:
+
 # What I learned
-### Declan
+### Declan:
 I learned how simple behaviours and algorithms can translate into a more complex finished product as they start interacting with one another, with unintended and unexpected consequences. I also got more experience with working with state machines as a whole.
 
+### James:
+
 References
-[Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
-
-[Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
-
-[State Machine Implementation]https://youtu.be/G1bd75R10m4
+- [Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
+- [Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
+- [State Machine Implementation](https://youtu.be/G1bd75R10m4)
 
