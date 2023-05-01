@@ -65,7 +65,7 @@ ObjectSpawner.cs| Self Written|
 My focus of the project was on making the underwater visual effects of the scene, as well as creating some of the aquatic boids. The turtles in the scene with wandering behaviours, as well as the school of fish that utilizes offset pursue, and fleeing behaviours. I also implemented a state machine to manage the different states and behaviours. 
 
 ### James:
-I started off my contribution to the project by adding a player controller using Unity's new input system. Then worked on the environment by adding coral, rocks, a ship and many other little details to make the scene feel alive. To give a natural feeling to the scene I made script that would randomly spawn these objects. I then turned my attention to creating 
+I started off my contribution to the project by adding a player controller using Unity's new input system. Then worked on the environment by adding coral, rocks, a ship and many other little details to make the scene feel alive. To give a natural feeling to the scene I made script that would randomly spawn these objects. I then turned my attention to creating the anglerfish. After creating it I wanted its followpath to feel more natural, so I made waypoints on the path assign in a random area. After this I began to work on a shark that would seek and pursue fish that would wander around the scene. Using these behaviours I was able to create convincing aquatic creatures.
 
 # What I am most proud of 
 ### Declan:
@@ -79,7 +79,7 @@ I learned how simple behaviours and algorithms can translate into a more complex
 
 ### James:
 
-### References
+# References
 - [Music](https://www.youtube.com/watch?v=lJuK3NLaC1Y&ab_channel=CharlesTrenet-Topic)
 - [Music](https://www.youtube.com/watch?v=76nZSz3Omyg)
 - [State Machine Implementation](https://youtu.be/G1bd75R10m4)
