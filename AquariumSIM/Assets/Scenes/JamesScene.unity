@@ -1328,7 +1328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648772214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4368885, y: 14.186409, z: -19.994755}
+  m_LocalPosition: {x: -30.24, y: 10.33, z: -19.994755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1543,7 +1543,7 @@ GameObject:
   - component: {fileID: 794035997}
   - component: {fileID: 794035996}
   m_Layer: 0
-  m_Name: Path
+  m_Name: AnglerFishPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1562,11 +1562,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: -8.1, y: 4.52, z: 8.12}
-  - {x: -25.57, y: 4.12, z: -14.17}
-  - {x: -22.59, y: 6.7, z: 12.4}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   current: 0
   isLooped: 1
+  pathRangeX: 80
+  pathRangeY: 40
+  pathRangeZ: 80
 --- !u!4 &794035997
 Transform:
   m_ObjectHideFlags: 0
@@ -1575,7 +1580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794035995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
