@@ -1,6 +1,6 @@
 # GE2-2023-Assignment-Declan-Cooke-and-James-Mohan
 
-# Planet Music 2, the Ocean Experience
+# The Ocean Experience
 
 ### Names & Student Numbers:
 #### Declan Cooke | C20465442
@@ -14,3 +14,7 @@ We plan on making a simulation of marine life living in their natural habitat un
 
 ### The Approach
 Through simple behaviours and algorithms, we wanted to simulate an aquarium teeming with life that interacts with eachother in a multitude of ways. We made a wide range of different types of fish and aquatic life with simple instructions and states. 
+
+
+### Alan Watts
+While our aquatic creatures only have a simple set of behaviours, what emerges from them interacting with one another is an explosion of autonomous life and individuality neither of us had predicted when we created this project. A school of fish with that follows a leader fish will flee in a wonderful unique pattern when its encountered by the shark boid, the pattern in which the fish flee is different every time. In an attempt to keep the creatures within the boundary of the scene, we added a simple avoidance algorithm to our creatures, and programmed them to avoid the walls of our scene. This simple instruction led to emergent patterns and behaviours in how the creatures would act when approaching the boundaries. They would fly in unpredicatble directions every time, especially the schools of fish. This would create situations where the shark boid would reach the wall chasing a fish and wouldn't know what to do, causing the shark boid to wait for the fish to turn around for  its chance to eat the poor fish! 
