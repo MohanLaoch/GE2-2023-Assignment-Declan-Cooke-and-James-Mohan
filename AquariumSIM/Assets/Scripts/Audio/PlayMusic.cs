@@ -8,7 +8,7 @@ public class PlayMusic : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("BeyondTheSea");
+        FindObjectOfType<AudioManager>().Play("La Mer");
         StartCoroutine(NextAudio());
     }
 
