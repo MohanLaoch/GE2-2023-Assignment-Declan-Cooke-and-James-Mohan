@@ -27,3 +27,32 @@ By using the mathematical power of boids we were able to replicate the behaviour
 
 ### The Universe
 Our world is an underwater environment. Thus our artificial life replicates the behaviour of aquatic creatures. When creating their systems we wanted the aquatic creatures to feel natural in their environment. To do this each boid has different behaviours that mirror the real life aquatic creature. Sharks have pursue behaviours, whereas fish have flee behaviours and the turtles have pathfollows that are random with each instance.
+
+
+###Screenshots
+
+
+###Instructions
+
+
+###How it works
+###List of classes/assets
+Class/asset	Source
+MyClass.cs	Self written
+MyClass1.cs	Modified from reference
+MyClass2.cs	From reference
+
+
+Each team member or individual needs to write a paragraph or two explaining what they contributed to the project
+
+What they did
+
+What they are most proud of
+
+What they learned
+
+References
+Item 1
+Item 2
+
+
